@@ -1,0 +1,59 @@
+<div class="container mt-3">
+    <h1>Character Creation</h1>
+    <div class="row">
+        <div class="col-12">
+            <div class="col-12">
+                <p class="text-center buttonSpace">
+                    <!-- On click fetch data from randomizer uri -->
+                    <a (click)="addCharacter()" class="btn btn-primary btn-lg" href="#" role="button">Randomize</a>
+                    <a class="btn btn-primary btn-lg buttonSpace" href="#" role="button">Submit</a>
+                </p>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+                    <!--Hair Colour-->
+                    <ngb-carousel *ngIf="images" class="custom" id="HairCarousel" [interval]="false">
+                        <ng-template id="slide1" ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random first slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Hair Colour</p>
+                                <h3>Blonde</h3>
+                                <p>Let me guess... Cleric or Paladin?</p>
+                            </div>
+                        </ng-template>
+                        <ng-template id="slide2" ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random second slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Hair Colour</p>
+                                <h3>Black</h3>
+                                <p>For those that are Edgy.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template id="slide3" ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random third slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Hair Colour</p>
+                                <h3>Brown</h3>
+                                <p>For those that don't know what to do with their lives.</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+                <button (click)="getCharacterByID(1)">Test</button>
+            </div>
+
+        </div>
+
+    </div>
+    <hr />
+</div>
+</div>
