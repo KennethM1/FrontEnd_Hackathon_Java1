@@ -4,8 +4,9 @@
         <div class="col-12">
             <div class="col-12">
                 <p class="text-center buttonSpace">
-                    <!-- On click fetch data from randomizer uri -->
-                    <a (click)="addCharacter()" class="btn btn-primary btn-lg" href="#" role="button">Randomize</a>
+
+
+                    <a (click)="Randomize(3)" class="btn btn-primary btn-lg" href="#" role="button">Randomize</a>
                     <a class="btn btn-primary btn-lg buttonSpace" href="#" role="button">Submit</a>
                 </p>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -14,7 +15,8 @@
                         <li data-target="#carouselExampleControls" data-slide-to="1"></li>
                         <li data-target="#carouselExampleControls" data-slide-to="2"></li>
                     </ol>
-                    <!--Hair Colour-->
+
+                    <!-- Hair Color -->
                     <ngb-carousel *ngIf="images" class="custom" id="HairCarousel" [interval]="false">
                         <ng-template id="slide1" ngbSlide>
                             <div class="picsum-img-wrapper custom">
@@ -48,12 +50,177 @@
                         </ng-template>
                     </ngb-carousel>
                 </div>
-                <button (click)="getCharacterByID(1)">Test</button>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Eye Color -->
+                    <ngb-carousel *ngIf="images" class="custom" [interval]="false">
+                        <ng-template ngbSlide>
+                            <div class=" picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random first slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Eye Colour</p>
+                                <h3>Brown</h3>
+                                <p>Those that wish they had different colour eyes.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random second slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Eye Colour</p>
+                                <h3>Green</h3>
+                                <p>You are probably an elf in a forest.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random third slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Eye Colour</p>
+                                <h3>Blue</h3>
+                                <p>Oh look, I'm special.</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+
+                    <!-- Nationality -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+                    <ngb-carousel *ngIf="images" class="custom" [interval]="false">
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random first slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Nationality</p>
+                                <h3>'Murica</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random second slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Nationality</p>
+                                <h3>Glasgow</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random third slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Nationality</p>
+                                <h3>Narnia</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+
+                    <!-- Race -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+                    <ngb-carousel *ngIf="images" class="custom" [interval]="false">
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random first slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Race</p>
+                                <h3>Human</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random second slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Race</p>
+                                <h3>Elf</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random third slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Race</p>
+                                <h3>Orc</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+
+                    <!-- Profession -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+                    <ngb-carousel *ngIf="images" class="custom" [interval]="false">
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random first slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Profession</p>
+                                <h3>Mage</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random second slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Profession</p>
+                                <h3>Rogue</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper custom">
+                                <img src="../assets/Test.png" alt="Random third slide">
+                            </div>
+                            <div class="carousel-caption">
+                                <p>Profession</p>
+                                <h3>Farmer</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+
+                    <button (click)="getCharacterByID(1)">Test</button>
+                </div>
+
             </div>
 
         </div>
-
+        <hr />
     </div>
-    <hr />
-</div>
 </div>
