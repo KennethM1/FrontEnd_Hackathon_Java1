@@ -1,0 +1,187 @@
+<div style="margin: 0 auto; text-align: center">
+  <h2 class="col-12">Create/Edit Character</h2>
+  <form
+    #userForm="ngForm"
+    style="margin: 0 auto"
+    class="col-4 text-center"
+    (ngSubmit)="submitCharacter(userForm.value)"
+  >
+    <input
+      style="margin: 2px"
+      class="col-8"
+      type="text"
+      name="name"
+      placeholder="Full Name"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      class="col-3"
+      list="sex"
+      name="sex"
+      placeholder="Sex"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      class="col-3"
+      type="text"
+      name="id"
+      placeholder="ID"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      class="col-3"
+      type="text"
+      name="age"
+      placeholder="Age"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      class="col-3"
+      type="text"
+      name="height"
+      placeholder="Height"
+      ngModel
+    />
+
+    <input
+      style="margin: 2px"
+      list="hairColor"
+      name="hairColor"
+      placeholder="Hair Color"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      list="eyeColor"
+      name="eyeColor"
+      placeholder="Eye Color"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      list="race"
+      name="race"
+      placeholder="Race"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      list="alignment"
+      name="alignment"
+      placeholder="Alignment"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      list="profession"
+      name="profession"
+      placeholder="Profession"
+      ngModel
+    />
+    <input
+      style="margin: 2px"
+      list="nationality"
+      name="nationality"
+      placeholder="Nationality"
+      ngModel
+    />
+
+    <datalist id="sex">
+      <option value="MALE"></option>
+      <option value="FEMALE"></option>
+    </datalist>
+
+    <datalist id="hairColor">
+      <option value="WHITE"></option>
+      <option value="BLACK"></option>
+      <option value="BROWN"></option>
+      <option value="BLONDE"></option>
+      <option value="RED"></option>
+      <option value="GINGER"></option>
+      <option value="BLUE"></option>
+      <option value="PURPLE"></option>
+      <option value="GRAY"></option>
+    </datalist>
+
+    <datalist id="eyeColor">
+      <option value="BLACK"></option>
+      <option value="BLUE"></option>
+      <option value="GREEN"></option>
+      <option value="RED"></option>
+      <option value="WHITE"></option>
+      <option value="TURQUOISE"></option>
+      <option value="GRAY"></option>
+      <option value="PURPLE"></option>
+      <option value="GOLD"></option>
+    </datalist>
+
+    <datalist id="race">
+      <option value="HUMAN"></option>
+      <option value="ELF"></option>
+      <option value="DARK ELF"></option>
+      <option value="ORC"></option>
+      <option value="HALF ELF"></option>
+      <option value="HALF ORC"></option>
+      <option value="DRAGON_BORN"></option>
+      <option value="HALFLING"></option>
+      <option value="DWARF"></option>
+      <option value="DEMON"></option>
+      <option value="DIVINE"></option>
+    </datalist>
+
+    <datalist id="alignment">
+      <option value="LAWFUL GOOD"></option>
+      <option value="NEUTRAL GOOD"></option>
+      <option value="CHAOTIC GOOD"></option>
+      <option value="LAWFUL NEUTRAL"></option>
+      <option value="TRUE NEUTRAL"></option>
+      <option value="CHAOTIC NEUTRAL"></option>
+      <option value="LAWFUL EVIL"></option>
+      <option value="NEUTRAL EVIL"></option>
+      <option value="CHAOTIC EVIL"></option>
+    </datalist>
+
+    <datalist id="profession">
+      <option value="RANGER"></option>
+      <option value="ASSASSIN"></option>
+      <option value="ROGUE"></option>
+      <option value="INNKEEPER"></option>
+      <option value="KNIGHT"></option>
+      <option value="PALADIN"></option>
+      <option value="BARBARIAN"></option>
+      <option value="DRUID"></option>
+      <option value="MAGE"></option>
+      <option value="SORCEROR"></option>
+      <option value="CLERIC"></option>
+      <option value="INNKEEPER"></option>
+      <option value="GUARDIAN"></option>
+      <option value="FARMER"></option>
+      <option value="BLACKSMITH"></option>
+      <option value="PRIEST"></option>
+      <option value="ELDER"></option>
+      <option value="BEAST TAMER"></option>
+      <option value="DRAGON SLAYER"></option>
+    </datalist>
+
+    <datalist id="nationality">
+      <option value="GLASGOW"></option>
+      <option value="EDINBURGH"></option>
+      <option value="ABERDEEN"></option>
+      <option value="DUNDEE"></option>
+      <option value="PAISLEY"></option>
+      <option value="LIVINGSTON"></option>
+      <option value="DUNFIRMLINE"></option>
+      <option value="KIRKCALDY"></option>
+      <option value="FALKIRK"></option>
+      <option value="AYR"></option>
+      <option value="PENICUIK"></option>
+      <option value="ERSKINE"></option>
+      <option value="GOTHAM"></option>
+    </datalist>
+    <button class="btn btn-secondary" type="submit">Submit</button>
+  </form>
+</div>

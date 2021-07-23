@@ -31,6 +31,6 @@ export class BackendService {
     return this.http.get<Character>(`${this.urlCharByID}/${id}`);
   }
   public editCharacter(character: Character): Observable<Character> {
-    return this.http.post<Character>(this.urlCharacters, character);
+    return this.http.post<Character>(this.urlCharEdit, character);
   }
 }

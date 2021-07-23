@@ -1,0 +1,16 @@
+.carousel-caption {
+  display: block;
+  bottom: 5rem;
+}
+
+.custom {
+  top: 5rem;
+  height: 50%;
+}
+
+li {
+  display: block;
+  align-items: flex-start;
+  list-style-type: none;
+  font-size: larger;
+}
